@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Day Out</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .event-hero {
+            background-image: url("images/youth-day.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .event-hero::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .event-hero h1 {
+            z-index: 1;
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .event-hero p {
+            z-index: 1;
+            font-size: 1.2em;
+            font-weight: lighter;
+            margin-top: 10px;
+        }
+
+        /* Event Details Section */
+        .event-details {
+            text-align: center;
+            padding: 40px 20px;
+          
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            margin: -50px 20px 40px;
+            border-radius: 10px;
+        }
+
+        .event-details h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .event-details p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Image Gallery Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+        <!-- header -->
+        <header>
+            <div class="top-bar">
+                <div class="logo">
+                    <img src="images/100.png" alt="Christ the King Parish Logo">
+                    <div class="logo-text">
+                        <h1>St. Cyprian Kawanda</h1>
+                        <p>Parish Kampala</p>
+                        <p>God is one and Christ is one and his church is one</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="mass_time.html" class="button">Mass Schedule</a>
+                    <a href="offering.html" class="button">Donate</a>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=61566735257997"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/@StCyprianParish"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/@StCyprianParishKawnada"><img src="images/tik-tok.png" alt="YouTube"></a>
+                    <a href="https://www.tiktok.com/@st.cyprian.parish"><img src="images/youtube (1).png" alt="TikTok"></a>
+                </div>
+            </div>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown"><a href="history.html">About Us <span>&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="sub_parish.html">Sub Parishes</a></li>
+                        <li><a href="parish_leaders.html">Leadership</a></li>
+                        <li><a href="corevalues_goals.html">Core Values & Goals</a></li>
+                        <li><a href="mission.html">Mission & Vision</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="mass_time.html">Schedules <span>&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="mass_time.html">Mass Time</a></li>
+                        <li><a href="confession.html">Confession</a></li>
+                        <li><a href="adoration.html">Adoration</a></li>
+                        <li><a href="liturgical.html">Liturgical</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="chior.html">Liturgy <span>&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="chior.html">Choirs</a></li>
+                        <li><a href="alter_server.html">Altar Servers</a></li>
+                        <li><a href="lector.html">Lector</a></li>
+                        <li><a href="ushers.html">Ushers</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="baptism.html">Sacraments <span>&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="baptism.html">Baptism</a></li>
+                        <li><a href="eucharist.html">Eucharist</a></li>
+                        <li><a href="confession.html">Confirmation</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="presbytery.html">Projects <span>&#9660;</span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="presbytery.html">Presbytery</a></li>
+                    </ul>
+                </li>
+                <li><a href="partners.html">Our Partners</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+   
+
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <h2>Youth Day Out</h2>
+        <p>A day for the youth to connect, celebrate, and grow together in faith! We have planned exciting activities, discussions, and performances aimed at empowering and inspiring our young parishioners.</p>
+        <p><strong>Date:</strong> Sunday, December 8, 2024</p>
+        <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+        <p><strong>Location:</strong> Beach</p>
+        
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery">
+        <img src="images/beach1.jpg" alt="Youth Fellowship">
+        <img src="images/b2.webp" alt="Youth Discussions">
+        <img src="images/b3.webp" alt="Youth Celebration">
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="s-footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="images/100.png" alt="Christ the King Parish Logo">
+                <div class="logo-text">
+                    <h1>St. Cyprian Kawanda</h1>
+                    <p>Parish Kampala</p>
+                    <p>A Tent of Encounter With God</p>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Church Street, Kawanda</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: 0779699852</p>
+                <p><i class="fas fa-envelope"></i> Email: cypriankawanda@gmail.com</p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566735257997"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/@StCyprianParish"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/@StCyprianParishKawnada"><img src="images/tik-tok.png" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@st.cyprian.parish"><img src="images/youtube (1).png" alt="TikTok"></a>
+            </div>
+
+            <div class="footer-donations">
+                <h4>Support Our Mission</h4>
+                <a href="/donate" class="donate-btn">Donate Now</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Cyprian Catholic Parish. All Rights Reserved.</p>
+            <a href="/terms-of-service">Terms of Service</a> | 
+            <a href="/privacy-policy">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>

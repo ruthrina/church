@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parish leader</title>
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Parish leaders */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.leadership-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    color: #2980b9;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.leader-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.leader-card {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.leader-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+h3 {
+    font-size: 22px;
+    color: #34495e;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+.leader-card p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+    
+    .leader-card {
+        width: 100%;
+    }
+
+ 
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.leader-contain {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #f7f9fc;
+    flex-wrap: wrap;
+    
+}
+
+.leader-contain {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: #f9fafb; /* Subtle background */
+    flex-wrap: wrap;
+}
+
+.leader-ca {
+    text-align: center;
+    flex: 1;
+}
+
+.leader-ca img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid #2c3e50; /* Dark border to make the image stand out */
+}
+
+.leader-ca:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.leader-ca h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #2c3e50; /* Darker color for name */
+    margin: 20px 0 10px;
+}
+
+.leader-ca p {
+    font-size: 1.2em;
+    color: #7f8c8d; /* Lighter color for the role */
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .leader-contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leader-ca img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section class="bd">
+       <!-- header
+    ================================================== -->
+        <!-- header
+    ================================================== -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/100.png" alt="Christ the King Parish Logo">
+                <div class="logo-text">
+                    <h1>St.Cyprian Kawanda</h1>
+                    <p>Parish Kampala</p>
+                    <p>God is one and Christ is one and his church is one</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="mass_time.html" class="button">Mass Schedule</a>
+                <a href="offering.html" class="button">Donate</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566735257997"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/@StCyprianParish"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                <!-- <a href="#"><img src="images/instagram.png" alt="Instagram"></a> -->
+                <a href="https://www.youtube.com/@StCyprianParishKawnada"><img src="images/tik-tok.png"
+                        alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@st.cyprian.parish"><img src="images/youtube (1).png" alt="Tiktok"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="history.html">About Us <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="history.html">History</a></li>
+
+                    <li><a href="sub_parish.html">sub parishes</a></li>
+                    <li><a href="parish_leaders.html">Leadership</a></li>
+                    <li><a href="corevalues_goals.html">core values & goals</a></li>
+                    <li><a href="mission.html">Mission & Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="mass_time.html">Schedules <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="mass_time.html">Mass Time</a></li>
+                    <li><a href="confession.html">Confession</a></li>
+                    <li><a href="adoration.html">Adoration</a></li>
+                    <li><a href="Liturgical.html">Liturgical</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="chior.html">Liturgy <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+
+                    <li><a href="chior.html">Choirs</a></li>
+                    <li><a href="alter_server.html">Altar Servers</a></li>
+                    <li><a href="lector.html">Lector</a></li>
+                    <li><a href="ushers.html">Ushers</a></li>
+
+                </ul>
+            </li>
+            <li class="dropdown"><a href="baptism.html">Sacraments <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="baptism.html">Baptism</a></li>
+                    <li><a href="eucharist.html">Eucharist</a></li>
+                    <li><a href="confession.html">Confirmation</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="Presbytery.html">Presbytery<span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="Presbytery.html">Presbytery</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="patners.html">Our Patners</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="leadership-section">
+        <h1>Parish Leadership</h1>
+    
+        <h2>Priests</h2>
+        <div class="leader-contain">
+            <div class="leader-ca">
+                <img src="images/20.jpg" alt="Priest 1" class="leader-img">
+                <h3>Father Galiwango Robert</h3>
+                <p>Parish Priest</p>
+            </div>
+            <div class="leader-ca">
+                <img src="images/ju.jfif" alt="Priest 2" class="leader-img">
+                <h3>Fr. Jude</h3>
+                <p>Assistant Parish Priest</p>
+            </div>
+            
+        </div>
+    
+        <h2>Parish Pastoral Executive Council 2024 - 2026</h2>
+        <div class="leader-container">
+            <div class="leader-card">
+                <img src="images/6.jpg" alt="Leader 1" class="leader-img">
+                <h3>Nabbuye Josephine</h3>
+                <p>Ssabasomesa</p>
+            </div>
+            <div class="leader-card">
+                <img src="images/8.jpg" alt="Leader 2" class="leader-img">
+                <h3>Eng.Wakaza George</h3>
+                <p>Ssabafumbo wa Parish</p>
+            </div>
+            <div class="leader-card">
+                <img src="images/13.jpg" alt="Placeholder" class="leader-img">
+                <h3>Mr.Ssembatya Edward</h3>
+                <p>Ssaabakristu</p>
+            </div>
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Gerald Katamba</h3>
+                <p>Men's Guild</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Kyeyune Steven</h3>
+                <p>Muwandiisi</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Kitandwe</h3>
+                <p>Vice  Ssaabakristu</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Eng.Wakaza George</h3>
+                <p>Ssabafumbo wa Parish</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Gawanye Maurice</h3>
+                <p>Finance</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mrs.Pauline Kijjambu</h3>
+                <p>Omusamaria</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Veronica Ssentongo</h3>
+                <p>Women's Guild</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mrs. Assimwe Resta</h3>
+                <p>Bibiina Byenkola Enkatuliki</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Ms. Mugisha Lillian</h3>
+                <p>Wa Biibina Bya Ppaapa</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Joseph Ssentongo</h3>
+                <p>Liturgy</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Ms.Monica Katamba Sserubiri</h3>
+                <p>Wabyanjigisa</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Omubejja Batenga Mary.B</h3>
+                <p>Mawulire</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mrs.Lucy Katende</h3>
+                <p>Healthy</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Bendict Kaziisa</h3>
+                <p>Ssabavubuka</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Namwasse Preacher</h3>
+                <p>Nnabavubuka</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Robert Ssewava</h3>
+                <p>Ssaabakristu St.Dominic Kawanda</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Ben Ntambaazi</h3>
+                <p>Caritus</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Kirabira Francis</h3>
+                <p>Peace and Justice</p>
+            </div>
+
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Martin Paul Busuulwa</h3>
+                <p>Ssaabakristu St.Kizito Namalere S/P</p>
+            </div>
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Kiragga Muwanga</h3>
+                <p>Ssaabakristu St.Andrews Kirinnyabigo S/P</p>
+            </div>
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Ssalongo Peter Ssempaanyi</h3>
+                <p>Ssaabakristu St.Noa Nakyesanja/Kikajjo</p>
+            </div>
+            <div class="leader-card">
+                <img src="images/9.jpg" alt="Leader 4" class="leader-img">
+                <h3>Mr.Kyambadde</h3>
+                <p>Education</p>
+            </div>
+            
+        </div>
+    </div>
+  <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/100.png" alt="Christ the King Parish Logo">
+                <div class="logo-text">
+                    <h1>St. Cyprian Kawanda</h1>
+                    <p>Parish Kampala</p>
+                    <p>A Tent of Encounter With God</p>
+                </div>
+            </div>
+    
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Church Street, Kawanda</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: 0779699852</p>
+                <p><i class="fas fa-envelope"></i> Email: cypriankawanda@gmail.com</p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566735257997"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/home/@StCyprianParish"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                <!-- <a href="#"><img src="images/instagram.png" alt="Instagram"></a> -->
+                <a href="https://www.youtube.com/@StCyprianParishKawnada"><img src="images/tik-tok.png"
+                        alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@st.cyprian.parish"><img src="images/youtube (1).png" alt="Tiktok"></a>
+            </div>
+    
+            <!-- Donations -->
+            <div class="footer-donations">
+                <h4>Support Our Mission</h4>
+                <a href="/donate" class="donate-btn">Donate Now</a>
+            </div>
+        </div>
+    
+        <!-- Copyright and Legal Links -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Cyprian Catholic Parish. All Rights Reserved.</p>
+            <a href="/terms-of-service">Terms of Service</a> | 
+            <a href="/privacy-policy">Privacy Policy</a>
+        </div>
+    </footer>
+</section>    
+</body>
+</html>

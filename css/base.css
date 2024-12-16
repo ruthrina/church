@@ -1,0 +1,1662 @@
+/* =================================================================== 
+ *  Hesed Base Stylesheet
+ *  Ver. 1.0.0
+ *  07-25-2019
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *	# imports 
+ *	# normalize
+ *	# grid v2.1.0
+ *	# block grids
+ *	# MISC
+ *
+ * =================================================================== */
+
+/* ===================================================================
+ * # imports 
+ *
+ * ------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,500,600,700|Lora:400,400i,700,700i&display=swap");
+
+
+/* ==========================================================================
+ * # normalize
+ * normalize.css v8.0.1 | MIT License |
+ * github.com/necolas/normalize.css
+ *
+ * -------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- 
+ * ## document
+ * ------------------------------------------------------------------- */
+
+/* 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.*/
+html {
+	line-height: 1.15;  /* 1 */
+	-webkit-text-size-adjust: 100%;  /* 2 */
+}
+
+/* ------------------------------------------------------------------- 
+ * ## sections
+ * ------------------------------------------------------------------- */
+
+/* Remove the margin in all browsers. */
+body {
+	margin: 0;
+}
+
+/* Render the `main` element consistently in IE. */
+main {
+	display: block;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## text-level semantics
+ * ------------------------------------------------------------------- */
+
+/* Remove the gray background on active links in IE 10. */
+a {
+	background-color: transparent;
+}
+
+/* 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+	border-bottom: none;  /* 1 */
+	text-decoration: underline;  /* 2 */
+	text-decoration: underline dotted;  /* 2 */
+}
+
+/* Add the correct font weight in Chrome, Edge, and Safari. */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/* 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers. */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;  /* 1 */
+	font-size: 1em;  /* 2 */
+}
+
+/* Add the correct font size in all browsers. */
+small {
+	font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers. */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## embedded content
+ * ------------------------------------------------------------------- */
+
+/* Remove the border on images inside links in IE 10. */
+img {
+	border-style: none;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## forms
+ * ------------------------------------------------------------------- */
+
+/* 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari. */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;  /* 1 */
+	font-size: 100%;  /* 1 */
+	line-height: 1.15;  /* 1 */
+	margin: 0;  /* 2 */
+}
+
+/* Show the overflow in IE.
+ * 1. Show the overflow in Edge. */
+button,
+input {
+
+	/* 1 */
+	overflow: visible;
+}
+
+/* Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox. */
+button,
+select {
+
+	/* 1 */
+	text-transform: none;
+}
+
+/* Correct the inability to style clickable types in iOS and Safari. */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/* Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/* Restore the focus styles unset by the previous rule. */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/* Correct the padding in Firefox. */
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/* 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers. */
+legend {
+	box-sizing: border-box;  /* 1 */
+	color: inherit;  /* 2 */
+	display: table;  /* 1 */
+	max-width: 100%;  /* 1 */
+	padding: 0;  /* 3 */
+	white-space: normal;  /* 1 */
+}
+
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+	vertical-align: baseline;
+}
+
+/* Remove the default vertical scrollbar in IE 10+. */
+textarea {
+	overflow: auto;
+}
+
+/* 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10. */
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;  /* 1 */
+	padding: 0;  /* 2 */
+}
+
+/* Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/* 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari. */
+[type="search"] {
+	-webkit-appearance: textfield;  /* 1 */
+	outline-offset: -2px;  /* 2 */
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/* 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;  /* 1 */
+	font: inherit;  /* 2 */
+}
+
+/* ------------------------------------------------------------------- 
+ * ## interactive
+ * ------------------------------------------------------------------- */
+
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+details {
+	display: block;
+}
+
+/* Add the correct display in all browsers. */
+summary {
+	display: list-item;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## misc
+ * ------------------------------------------------------------------- */
+
+/* Add the correct display in IE 10+. */
+template {
+	display: none;
+}
+
+/* Add the correct display in IE 10. */
+[hidden] {
+	display: none;
+}
+
+
+/* ===================================================================
+ * # basic/base setup styles
+ *
+ * ------------------------------------------------------------------- */
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-weight: normal;
+	line-height: 1;
+	word-wrap: break-word;
+	-moz-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: none;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## inputs
+ * ------------------------------------------------------------------- */
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+/* ===================================================================
+ * # grid v2.1.0
+ *
+ *   -----------------------------------------------------------------
+ * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
+ *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
+ * - Grid columns without a specified width will automatically layout 
+ *   as equal width columns.
+ * ------------------------------------------------------------------- */
+
+/* rows
+ * ------------------------------------- */
+.row {
+	width: 89%;
+	max-width: 1340px;
+	margin: 0 auto;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+/* columns
+ * -------------------------------------- */
+.column {
+	-webkit-flex: 1 1 0%;
+	-ms-flex: 1 1 0%;
+	flex: 1 1 0%;
+	padding: 0 20px;
+}
+
+.collapse > .column,
+.column.collapse {
+	padding: 0;
+}
+
+
+/* flex item utility alignment classes
+ * ----------------------------------------- */
+.align-center {
+	margin: auto;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-left {
+	margin-right: auto;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-right {
+	margin-left: auto;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-x-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.align-x-left {
+	margin-right: auto;
+}
+
+.align-x-right {
+	margin-left: auto;
+}
+
+.align-y-center {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-y-top {
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+.align-y-bottom {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+/* large screen column widths 
+ * -------------------------------------- */
+.large-1 {
+	-webkit-flex: 0 0 8.33333%;
+	-ms-flex: 0 0 8.33333%;
+	flex: 0 0 8.33333%;
+	max-width: 8.33333%;
+}
+
+.large-2 {
+	-webkit-flex: 0 0 16.66667%;
+	-ms-flex: 0 0 16.66667%;
+	flex: 0 0 16.66667%;
+	max-width: 16.66667%;
+}
+
+.large-3 {
+	-webkit-flex: 0 0 25%;
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.large-4 {
+	-webkit-flex: 0 0 33.33333%;
+	-ms-flex: 0 0 33.33333%;
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+}
+
+.large-5 {
+	-webkit-flex: 0 0 41.66667%;
+	-ms-flex: 0 0 41.66667%;
+	flex: 0 0 41.66667%;
+	max-width: 41.66667%;
+}
+
+.large-6,
+.large-half {
+	-webkit-flex: 0 0 50%;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.large-7 {
+	-webkit-flex: 0 0 58.33333%;
+	-ms-flex: 0 0 58.33333%;
+	flex: 0 0 58.33333%;
+	max-width: 58.33333%;
+}
+
+.large-8 {
+	-webkit-flex: 0 0 66.66667%;
+	-ms-flex: 0 0 66.66667%;
+	flex: 0 0 66.66667%;
+	max-width: 66.66667%;
+}
+
+.large-9 {
+	-webkit-flex: 0 0 75%;
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	max-width: 75%;
+}
+
+.large-10 {
+	-webkit-flex: 0 0 83.33333%;
+	-ms-flex: 0 0 83.33333%;
+	flex: 0 0 83.33333%;
+	max-width: 83.33333%;
+}
+
+.large-11 {
+	-webkit-flex: 0 0 91.66667%;
+	-ms-flex: 0 0 91.66667%;
+	flex: 0 0 91.66667%;
+	max-width: 91.66667%;
+}
+
+.large-12,
+.large-full {
+	-webkit-flex: 0 0 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## medium screen devices
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:1200px) {
+	.row .row {
+		margin-left: -16px;
+		margin-right: -16px;
+	}
+
+	.column {
+		padding: 0 16px;
+	}
+
+	.medium-1 {
+		-webkit-flex: 0 0 8.33333%;
+		-ms-flex: 0 0 8.33333%;
+		flex: 0 0 8.33333%;
+		max-width: 8.33333%;
+	}
+
+	.medium-2 {
+		-webkit-flex: 0 0 16.66667%;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+
+	.medium-3 {
+		-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.medium-4 {
+		-webkit-flex: 0 0 33.33333%;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.medium-5 {
+		-webkit-flex: 0 0 41.66667%;
+		-ms-flex: 0 0 41.66667%;
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%;
+	}
+
+	.medium-6,
+	.medium-half {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.medium-7 {
+		-webkit-flex: 0 0 58.33333%;
+		-ms-flex: 0 0 58.33333%;
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%;
+	}
+
+	.medium-8 {
+		-webkit-flex: 0 0 66.66667%;
+		-ms-flex: 0 0 66.66667%;
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+
+	.medium-9 {
+		-webkit-flex: 0 0 75%;
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.medium-10 {
+		-webkit-flex: 0 0 83.33333%;
+		-ms-flex: 0 0 83.33333%;
+		flex: 0 0 83.33333%;
+		max-width: 83.33333%;
+	}
+
+	.medium-11 {
+		-webkit-flex: 0 0 91.66667%;
+		-ms-flex: 0 0 91.66667%;
+		flex: 0 0 91.66667%;
+		max-width: 91.66667%;
+	}
+
+	.medium-12,
+	.medium-full {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## tablets
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:800px) {
+	.tab-1 {
+		-webkit-flex: 0 0 8.33333%;
+		-ms-flex: 0 0 8.33333%;
+		flex: 0 0 8.33333%;
+		max-width: 8.33333%;
+	}
+
+	.tab-2 {
+		-webkit-flex: 0 0 16.66667%;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+
+	.tab-3 {
+		-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.tab-4 {
+		-webkit-flex: 0 0 33.33333%;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.tab-5 {
+		-webkit-flex: 0 0 41.66667%;
+		-ms-flex: 0 0 41.66667%;
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%;
+	}
+
+	.tab-6,
+	.tab-half {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.tab-7 {
+		-webkit-flex: 0 0 58.33333%;
+		-ms-flex: 0 0 58.33333%;
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%;
+	}
+
+	.tab-8 {
+		-webkit-flex: 0 0 66.66667%;
+		-ms-flex: 0 0 66.66667%;
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+
+	.tab-9 {
+		-webkit-flex: 0 0 75%;
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.tab-10 {
+		-webkit-flex: 0 0 83.33333%;
+		-ms-flex: 0 0 83.33333%;
+		flex: 0 0 83.33333%;
+		max-width: 83.33333%;
+	}
+
+	.tab-11 {
+		-webkit-flex: 0 0 91.66667%;
+		-ms-flex: 0 0 91.66667%;
+		flex: 0 0 91.66667%;
+		max-width: 91.66667%;
+	}
+
+	.tab-12,
+	.tab-full {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hide-on-tablet {
+		display: none;
+	}
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## mobile devices 
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.row {
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.row .row {
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.column {
+		padding: 0 10px;
+	}
+
+	.mob-1 {
+		-webkit-flex: 0 0 8.33333%;
+		-ms-flex: 0 0 8.33333%;
+		flex: 0 0 8.33333%;
+		max-width: 8.33333%;
+	}
+
+	.mob-2 {
+		-webkit-flex: 0 0 16.66667%;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+
+	.mob-3 {
+		-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.mob-4 {
+		-webkit-flex: 0 0 33.33333%;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.mob-5 {
+		-webkit-flex: 0 0 41.66667%;
+		-ms-flex: 0 0 41.66667%;
+		flex: 0 0 41.66667%;
+		max-width: 41.66667%;
+	}
+
+	.mob-6,
+	.mob-half {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.mob-7 {
+		-webkit-flex: 0 0 58.33333%;
+		-ms-flex: 0 0 58.33333%;
+		flex: 0 0 58.33333%;
+		max-width: 58.33333%;
+	}
+
+	.mob-8 {
+		-webkit-flex: 0 0 66.66667%;
+		-ms-flex: 0 0 66.66667%;
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+
+	.mob-9 {
+		-webkit-flex: 0 0 75%;
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.mob-10 {
+		-webkit-flex: 0 0 83.33333%;
+		-ms-flex: 0 0 83.33333%;
+		flex: 0 0 83.33333%;
+		max-width: 83.33333%;
+	}
+
+	.mob-11 {
+		-webkit-flex: 0 0 91.66667%;
+		-ms-flex: 0 0 91.66667%;
+		flex: 0 0 91.66667%;
+		max-width: 91.66667%;
+	}
+
+	.mob-12,
+	.mob-full {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## small mobile devices <= 400px
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.row {
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+
+	.row .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.column {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+
+}
+
+
+/* ===================================================================
+ * # block grids
+ *
+ * -------------------------------------------------------------------
+ * Equally-sized columns define at parent/row level.
+ * ------------------------------------------------------------------- */
+.block-large-1-8 > .column {
+	-webkit-flex: 0 0 12.5%;
+	-ms-flex: 0 0 12.5%;
+	flex: 0 0 12.5%;
+	max-width: 12.5%;
+}
+
+.block-large-1-6 > .column {
+	-webkit-flex: 0 0 16.66667%;
+	-ms-flex: 0 0 16.66667%;
+	flex: 0 0 16.66667%;
+	max-width: 16.66667%;
+}
+
+.block-large-1-5 > .column {
+	-webkit-flex: 0 0 20%;
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 20%;
+}
+
+.block-large-1-4 > .column {
+	-webkit-flex: 0 0 25%;
+	-ms-flex: 0 0 25%;
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.block-large-1-3 > .column {
+	-webkit-flex: 0 0 33.33333%;
+	-ms-flex: 0 0 33.33333%;
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+}
+
+.block-large-1-2 > .column {
+	-webkit-flex: 0 0 50%;
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.block-large-full > .column {
+	-webkit-flex: 0 0 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## block grids - medium screen devices
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:1200px) {
+	.block-medium-1-8 > .column {
+		-webkit-flex: 0 0 12.5%;
+		-ms-flex: 0 0 12.5%;
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
+
+	.block-medium-1-6 > .column {
+		-webkit-flex: 0 0 16.66667%;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+
+	.block-medium-1-5 > .column {
+		-webkit-flex: 0 0 20%;
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.block-medium-1-4 > .column {
+		-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.block-medium-1-3 > .column {
+		-webkit-flex: 0 0 33.33333%;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.block-medium-1-2 > .column {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.block-medium-full > .column {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## block grids - tablets
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:800px) {
+	.block-tab-1-8 > .column {
+		-webkit-flex: 0 0 12.5%;
+		-ms-flex: 0 0 12.5%;
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
+
+	.block-tab-1-6 > .column {
+		-webkit-flex: 0 0 16.66667%;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+
+	.block-tab-1-5 > .column {
+		-webkit-flex: 0 0 20%;
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.block-tab-1-4 > .column {
+		-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.block-tab-1-3 > .column {
+		-webkit-flex: 0 0 33.33333%;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.block-tab-1-2 > .column {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.block-tab-full > .column {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## block grids - mobile devices
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.block-mob-1-8 > .column {
+		-webkit-flex: 0 0 12.5%;
+		-ms-flex: 0 0 12.5%;
+		flex: 0 0 12.5%;
+		max-width: 12.5%;
+	}
+
+	.block-mob-1-6 > .column {
+		-webkit-flex: 0 0 16.66667%;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+
+	.block-mob-1-5 > .column {
+		-webkit-flex: 0 0 20%;
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	.block-mob-1-4 > .column {
+		-webkit-flex: 0 0 25%;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.block-mob-1-3 > .column {
+		-webkit-flex: 0 0 33.33333%;
+		-ms-flex: 0 0 33.33333%;
+		flex: 0 0 33.33333%;
+		max-width: 33.33333%;
+	}
+
+	.block-mob-1-2 > .column {
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.block-mob-full > .column {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+}
+
+/* ------------------------------------------------------------------- 
+ * ## block grids - small mobile devices <= 400px
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.stack > .column {
+		-webkit-flex: 0 0 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+
+}
+
+
+/* ===================================================================
+ * # MISC
+ *
+ * ------------------------------------------------------------------- */
+.h-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* misc helper classes
+ * -------------------------------------- */
+.is-hidden {
+	display: none;
+}
+
+.is-invisible {
+	visibility: hidden;
+}
+
+.h-antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.h-overflow-hidden {
+	overflow: hidden;
+}
+
+.h-remove-bottom {
+	margin-bottom: 0;
+}
+
+.h-add-half-bottom {
+	margin-bottom: 1.6rem !important;
+}
+
+.h-add-bottom {
+	margin-bottom: 3.2rem !important;
+}
+
+.h-no-border {
+	border: none;
+}
+
+.h-full-width {
+	width: 100%;
+}
+
+.h-text-center {
+	text-align: center;
+}
+
+.h-text-left {
+	text-align: left;
+}
+
+.h-text-right {
+	text-align: right;
+}
+
+.h-pull-left {
+	float: left;
+}
+
+.h-pull-right {
+	float: right;
+}
+
+/*# sourceMappingURL=base.css.map */
+/* Reset browser default styling */
+
+/* start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #070474;
+    color: white;
+    padding: 10px 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.logo-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.logo-text p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: #0d2240;
+}
+
+/* Social media icons styling */
+.social-media a {
+    margin-left: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #3b0d11;;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a23740;
+    border-radius: 5px;
+}
+
+nav ul li span {
+    margin-left: 5px;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a23740;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    text-align: left;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffca28;
+    color: #6a1b9a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+/* schedules */
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.schedule-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px); /* Adjust the width as needed */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.schedule-box:hover {
+    transform: translateY(-5px);
+}
+
+.schedule-box h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.schedule-box p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.schedule-box i {
+    color: #007bff; /* Change to your desired icon color */
+    margin-bottom: 10px;
+}
+
+/* Image Gallery Section */
+.image-gallery {
+    text-align: center; /* Center-align text in the section */
+    padding: 20px; /* Padding around the gallery */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title Styling */
+.gallery-title {
+    font-size: 2em; /* Large title font size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for title */
+}
+
+/* Container for the items */
+.container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Max width for large screens */
+}
+
+/* Individual item styles */
+.item {
+    position: relative; /* Position relative for absolute children */
+    width: calc(25% - 20px); /* Four items per row, with some space */
+    margin: 10px; /* Margin around each item */
+    overflow: hidden; /* Hide overflow for clean image cropping */
+    border-radius: 8px; /* Rounded corners for items */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+/* Image styling */
+.item img {
+    width: 100%; /* Make images full width of the item */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    display: block; /* Remove bottom space */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Title overlay styling */
+.item h3 {
+    position: absolute; /* Position absolute to overlay on the image */
+    bottom: 10px; /* Position from the bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    color: white; /* White text color for contrast */
+    text-align: center; /* Center the text */
+    font-size: 1.5em; /* Font size */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 10px; /* Padding around the text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Hover effect for items */
+.item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%; /* One item per row on very small screens */
+    }
+}
+
+/* Upcoming Events Section */
+.upcoming-events {
+    background-color: #e8d0e8fc; /* Light grey background for the entire section */
+    padding: 20px; /* Optional: Add padding to the section */
+}
+
+.event-header {
+    text-align: center; /* Center the header */
+    margin-bottom: 2.4rem; /* Spacing below the header */
+}
+
+.event-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Ensure space between items */
+}
+
+.event-item {
+    background-color: #ffffff; /* White background for items */
+    border-radius: 8px; /* Rounded corners for items */
+    padding: 20px;
+    flex: 0 1 calc(50% - 20px); /* Maintain two items on each line with space for margins */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow on items */
+    transition: transform 0.2s; /* Smooth hover effect */
+    min-width: 300px; /* Minimum width to maintain item size */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin-bottom: 20px; /* Add vertical space between rows */
+    margin-left: 10px; /* Add margin to the left */
+    margin-right: 10px; /* Add margin to the right */
+	
+}
+
+.event-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.event-title {
+    font-size: 2em; /* Title size */
+    color: #094789; /* Primary color for links */
+}
+
+.event-title a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.event-title a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.event-details {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.event-details div {
+    color: #555; /* Subdued text color for metadata */
+    font-size: 0.9em; /* Smaller font size for metadata */
+}
+
+.detail-divider {
+    border: none; /* Remove default border */
+    border-top: 1px solid #ccc; /* Light grey line */
+    margin: 5px 0; /* Space above and below the line */
+}
+
+/* Background color for different event items */
+.event-item-1 {
+    background-color: #b0e6ed; /* Light cyan */
+}
+
+.event-item-2 {
+    background-color: #ffe0b2; /* Light orange */
+}
+
+.event-item-3 {
+    background-color: #ffccbc; /* Light red */
+}
+
+.event-item-4 {
+    background-color: #c8e6c9; /* Light green */
+}
+
+.event-item-5 {
+    background-color: #b7a4da; /* Light purple */
+}
+
+.event-item-6 {
+    background-color: #f0e68c; /* Light yellow */
+}
+
+/* footer */
+.footer-contact, .footer-social, .footer-donations {
+    text-align: left;
+}
+
+.footer-contact h4, .footer-social h4, .footer-donations h4 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #ffd700;
+}
+
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer-donations .donate-btn {
+    background-color: #ffd700;
+    color: #094789;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer-bottom a {
+    color: #ffd700;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        text-align: center;
+    }
+
+    .footer-contact, .footer-social, .footer-donations {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertically center content */
+    flex-wrap: wrap; /* Wrap content if it overflows */
+    max-width: 1500px; /* Set max-width for the content */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 0 20px; /* Optional: Add padding for spacing */
+}
+
+.s-footer {
+    background-color: #094789; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.logo-text {
+    text-align: left;
+}
+
+.logo-text h1 {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+.logo-text p {
+   
+    margin: 0;
+}
+
+/* About Section Styles */
+.s-about {
+	background-color: #f0f4ff; /* Light background color */
+	padding: 40px 20px; /* Add padding around the section */
+  }
+  
+  .about-content {
+	display: flex; /* Use flexbox for layout */
+	justify-content: space-between; /* Space out the columns */
+	align-items: center; /* Center items vertically */
+  }
+  
+  .about-text {
+	padding-right: 20px; /* Add space between text and image */
+  }
+  
+  .about-image {
+	text-align: center; /* Center the image and caption */
+  }
+  
+  .about-img {
+	max-width: 90%; /* Make sure the image is responsive */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  h3.subhead {
+	font-size: 1.4em; /* Make the heading larger */
+	font-weight: bold; /* Bold the heading */
+	color: #6a1b9a; /* Deep purple color for the heading */
+	margin-bottom: 15px; /* Space below the heading */
+  }
+  
+  p.lead {
+	
+	
+	color: #333; /* Dark text color for contrast */
+	margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .caption {
+	font-style: italic;
+	color: #6a1b9a; /* Match with the heading */
+	margin-top: 15px; /* Space above caption */
+	text-align: center; /* Center the caption under the image */
+  }
+  
+  

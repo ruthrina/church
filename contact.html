@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - St. Cyprian Kawanda Parish</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .contact-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h1 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: #004d40;
+            margin-bottom: 5px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #00796b;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #00796b;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .contact-form button:hover {
+            background-color: #00574b;
+        }
+
+        .map {
+            margin-top: 30px;
+        }
+
+        .map h3 {
+            text-align: center;
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/100.png" alt="Christ the King Parish Logo">
+                <div class="logo-text">
+                    <h1>St. Cyprian Kawanda</h1>
+                    <p>Parish Kampala</p>
+                    <p>God is one and Christ is one and his church is one</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="mass_time.html" class="button">Mass Schedule</a>
+                <a href="offering.html" class="button">Donate</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/youtube (1).png" alt="YouTube"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown"><a href="history.html">About Us <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="sub_parish.html">Sub Parishes</a></li>
+                    <li><a href="parish_leaders.html">Leadership</a></li>
+                    <li><a href="corevalues_goals.html">Core Values & Goals</a></li>
+                    <li><a href="mission.html">Mission & Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="schedules.html">Schedules <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="mass_time.html">Mass Time</a></li>
+                    <li><a href="confession.html">Confession</a></li>
+                    <li><a href="adoration.html">Adoration</a></li>
+                    <li><a href="Liturgical.html">Liturgical</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="liturgy.html">Liturgy <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="chior.html">Choirs</a></li>
+                    <li><a href="alter_server.html">Altar Servers</a></li>
+                    <li><a href="lector.html">Lector</a></li>
+                    <li><a href="ushers.html">Ushers</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="sacraments.html">Sacraments <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="baptism.html">Baptism</a></li>
+                    <li><a href="eucharist.html">Eucharist</a></li>
+                    <li><a href="confession.html">Confirmation</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="Presbytery.html">Projects <span>&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="Presbytery.html">Presbytery</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="apostolates.html">Apostolates</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+
+        <div class="contact-info">
+            <div>
+                <h3>Phone</h3>
+                <p>+256 700 123 456</p>
+                <p>+256 771 654 321</p>
+            </div>
+            <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@cyprianparish.org">info@cyprianparish.org</a></p>
+                <p><a href="mailto:support@cyprianparish.org">support@cyprianparish.org</a></p>
+            </div>
+            <div>
+                <h3>Location</h3>
+                <p>Kawanda Parish, Kampala, Uganda</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="7a08b44b-51c7-48e8-b23c-c6f7e041b3c1">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit Form</button>
+        </form>
+
+        <!-- Map Section -->
+        <div class="map">
+            <h3>Our Location on Map</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12736.31542789462!2d32.5309669!3d0.4164341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177daf92eac45d4b%3A0x43fa04d8e09b5836!2sSt.+Cyprian+Catholic+Parish+Kawanda!5e0!3m2!1sen!2sug!4v1638352228381!5m2!1sen!2sug" 
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="s-footer">
+        <div class="footer-container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/100.png" alt="Christ the King Parish Logo">
+                <div class="logo-text">
+                    <h1>St. Cyprian Kawanda</h1>
+                    <p>Parish Kampala</p>
+                    <p>A Tent of Encounter With God</p>
+                </div>
+            </div>
+    
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Church Street, Kawanda</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: 0779699852</p>
+                <p><i class="fas fa-envelope"></i> Email: cypriankawanda@gmail.com</p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61566735257997"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/home/@StCyprianParish"><img src="images/twitter-logo.png" alt="Twitter"></a>
+                <!-- <a href="#"><img src="images/instagram.png" alt="Instagram"></a> -->
+                <a href="https://www.youtube.com/@StCyprianParishKawnada"><img src="images/tik-tok.png"
+                        alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@st.cyprian.parish"><img src="images/youtube (1).png" alt="Tiktok"></a>
+            </div>
+    
+            <!-- Donations -->
+            <div class="footer-donations">
+                <h4>Support Our Mission</h4>
+                <a href="/donate" class="donate-btn">Donate Now</a>
+            </div>
+        </div>
+    
+        <!-- Copyright and Legal Links -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 St. Cyprian Catholic Parish. All Rights Reserved.</p>
+            <a href="/terms-of-service">Terms of Service</a> | 
+            <a href="/privacy-policy">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>

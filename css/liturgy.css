@@ -1,0 +1,161 @@
+/* alter */
+
+/* Section Styles */
+.altar-servers-section {
+    max-width: 1200px; /* Limit section width for better readability */
+    margin: 40px auto; /* Center the section with vertical space */
+    padding: 20px; /* Internal padding for breathing space */
+   
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h1 {
+    color: #f50808; /* Darker title color for prominence */
+    font-size: 36px; /* Font size for the main title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+h2 {
+    color: #2980b9; /* Accent color for section titles */
+    font-size: 28px; /* Font size for section titles */
+    margin-top: 30px; /* Space above section titles */
+    margin-bottom: 10px; /* Space below section titles */
+}
+
+/* Paragraph and List Styles */
+p {
+   
+    font-size: 18px; /* Font size for paragraphs */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+ul {
+    list-style-type: square; /* Change bullet style */
+    padding-left: 20px; /* Padding for lists */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Introduction Section */
+.introduction {
+    background-color: #ecf0f1; /* Light gray for contrast */
+    padding: 15px; /* Padding inside introduction */
+    border-left: 5px solid #2980b9; /* Accent border on the left */
+    border-radius: 5px; /* Rounded corners */
+   
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below sections */
+}
+
+
+/* Role and Responsibilities Sections */
+.role, .responsibilities, .training {
+    padding: 20px; /* Padding for sections */
+    background-color: #ffffff; /* White background for sections */
+    border: 1px solid #dcdcdc; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space below sections */
+}
+
+.role h2, .responsibilities h2, .training h2 {
+    margin-top: 0; /* Remove default margin above h2 in sections */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .altar-servers-section {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    h2 {
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    p {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+}
+
+/* lector */
+
+
+
+/* Lectors Section */
+.lectors-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lectors-section h1, .lectors-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lectors-section p {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.lectors-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.lectors-section ul li {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+/* Ushers Section Styles */
+.ushers-section {
+    padding: 50px 80px;
+    background-color: #fff;
+}
+
+.ushers-section h1 {
+    font-size: 36px;
+    color: #2e3b4e;
+    margin-bottom: 20px;
+}
+
+.ushers-section h2 {
+    font-size: 28px;
+    color: #35475e;
+    margin-top: 40px;
+}
+
+.ushers-section p {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.ushers-section ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #555;
+}
+
+.ushers-section ul li {
+    margin-bottom: 10px;
+}
+

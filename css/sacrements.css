@@ -1,0 +1,368 @@
+/* Baptism Background */
+
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Left Section (Main Content) */
+.left-section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.left-section h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333; /* Darken the text color for better readability */
+}
+
+.left-section h2 {
+    color: #2980b9;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-section ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin-bottom: 20px;
+}
+
+.left-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Darker text for better contrast */
+}
+
+.left-section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Right Section (Get in Touch Form) */
+.right-section {
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.5); /* Lighter transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h3 {
+    color: #2980b9;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.right-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-section form input,
+.right-section form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.right-section form input[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.right-section form input[type="submit"]:hover {
+    background-color: #1f609f;
+}
+
+.contact-info {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the contact info */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h4 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333; /* Make the text darker for clarity */
+}
+
+
+.pdf-button {
+    display: inline-block;
+    background-color: #8729b9;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: #0dfafa;
+}
+
+
+/* eucharist */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean and modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0; /* Padding for header */
+}
+
+header .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Center content */
+    margin: auto;
+}
+
+header .logo img {
+    width: 60px; /* Logo size */
+}
+
+header .logo-text h1 {
+    margin: 0;
+    font-size: 24px; /* Main title font size */
+}
+
+header .buttons .button {
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded button corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+header .buttons .button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #444; /* Dark background for navigation */
+    color: white; /* White text for contrast */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul li {
+    position: relative; /* For dropdown positioning */
+}
+
+nav ul li a {
+    padding: 15px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Change color on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioning for dropdown */
+    background-color: #666; /* Dark background for dropdown */
+    min-width: 160px; /* Minimum width */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show on hover */
+}
+
+/* Section Styles */
+.eucharist-background {
+    background-image: url('../images/eu.jpg'); /* Ensure the correct image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    padding: 60px 20px; /* Adjust padding for the section */
+    min-height: 500px; /* Ensure a minimum height */
+    display: flex; /* Flex layout for content */
+    justify-content: center; /* Center content */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.eucharist-content {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 30px; /* Increased padding */
+    max-width: 800px; /* Maximum width for content */
+    margin: auto; /* Center content */
+}
+
+.eucharist-left-section,
+.eucharist-right-section {
+    margin: 20px 0; /* Margin between sections */
+}
+
+.eucharist-left-section h1 {
+    font-size: 28px; /* Heading size */
+    color: #333; /* Dark color for heading */
+}
+
+.eucharist-left-section h2 {
+    font-size: 22px; /* Subheading size */
+    color: #444; /* Slightly lighter color */
+}
+
+.eucharist-left-section p {
+    line-height: 1.6; /* Improved line spacing */
+    color: #555; /* Darker grey for text */
+}
+
+.eucharist-pdf-button {
+    display: inline-block; /* Inline block for buttons */
+    padding: 10px 15px; /* Button padding */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.eucharist-pdf-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Form Styles */
+form {
+    display: flex; /* Flex layout for the form */
+    flex-direction: column; /* Vertical layout */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #bab5b5; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between inputs */
+}
+
+form input[type="submit"] {
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* confirmation */
+
+
+
+
+
+
+/* Main Content */
+.confirmation-page {
+    max-width: 900px;
+    margin: 40px auto; /* Center the content */
+    padding: 20px;
+  
+    
+}
+
+h1 {
+    text-align: center;
+    color: #343a40; /* Dark gray for headings */
+}
+
+h2 {
+    color: #495057; /* Slightly lighter gray for subheadings */
+}
+
+.overview, .adult-info {
+    margin: 20px 0;
+}
+
+
+
+blockquote {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background: #f1f1f1; /* Light background for blockquote */
+    border-left: 5px solid #6c757d; /* Left border for emphasis */
+}
+
+/* Image Styles */
+.confirmation-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.co{
+    background-color: white;
+}
+
+
+
