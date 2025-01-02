@@ -35,21 +35,26 @@
             </div>
         </div>
     </header>
-
     <nav>
-        <ul>
+        <!-- Hamburger icon for mobile view -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span>&#9776;</span> <!-- This is the hamburger icon -->
+        </div>
+    
+        <ul id="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li class="dropdown"><a href="history.html">About Us <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="history.html">About Us <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="history.html">History</a></li>
-
-                    <li><a href="sub_parish.html">sub parishes</a></li>
+                    <li><a href="sub_parish.html">Sub Parishes</a></li>
                     <li><a href="parish_leaders.html">Leadership</a></li>
-                    <li><a href="corevalues_goals.html">core values & goals</a></li>
+                    <li><a href="corevalues_goals.html">Core Values & Goals</a></li>
                     <li><a href="mission.html">Mission & Vision</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="mass_time.html">Schedules <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="mass_time.html">Schedules <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="mass_time.html">Mass Time</a></li>
                     <li><a href="confession.html">Confession</a></li>
@@ -57,34 +62,35 @@
                     <li><a href="Liturgical.html">Liturgical</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="chior.html">Liturgy <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="chior.html">Liturgy <span>&#9660;</span></a>
                 <ul class="dropdown-content">
-
                     <li><a href="chior.html">Choirs</a></li>
                     <li><a href="alter_server.html">Altar Servers</a></li>
-                    <li><a href="lector.html">Lector</a></li>
+                    <li><a href="lector.html">Lectors</a></li>
                     <li><a href="ushers.html">Ushers</a></li>
-
                 </ul>
             </li>
-            <li class="dropdown"><a href="baptism.html">Sacraments <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="baptism.html">Sacraments <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="baptism.html">Baptism</a></li>
                     <li><a href="eucharist.html">Eucharist</a></li>
                     <li><a href="confession.html">Confirmation</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="Presbytery.html">Projects <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="Presbytery.html">Projects <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="Presbytery.html">Presbytery</a></li>
-                    
                 </ul>
             </li>
-            <li><a href="patners.html">Our Patners</a></li>
+            <li><a href="patners.html">Our Partners</a></li>
             <li><a href="media.html">Media</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    
     <section class="core-values-section">
         <div class="container">
             <div class="section-header">
@@ -93,33 +99,23 @@
             <div class="core-values-cards">
                 <div class="card">
                     <div class="icon">🙏</div> <!-- Faith icon -->
-                    <h2>Faith and Worship</h2>
-                    <p>Commitment to worship, prayer, and following the teachings of Christ.</p>
+                    <h2>Faith and Believe in One God</h2>
+                    <p>Unwavering commitment to the belief in one true God and living according to His divine teachings.</p>
                 </div>
                 <div class="card">
-                    <div class="icon">💼</div> <!-- Strong Stewardship icon -->
-                    <h2>Strong Stewardship</h2>
-                    <p>Managing our resources wisely and responsibly for the benefit of all.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">👥</div> <!-- Fellowship icon -->
-                    <h2>Fellowship</h2>
-                    <p>Building a sense of community through shared faith and friendship.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">📘</div> <!-- Education icon -->
-                    <h2>Education</h2>
-                    <p>Providing educational opportunities to foster spiritual and intellectual growth.</p>
-                </div>
-                <div class="card">
-                    <div class="icon">⚖️</div> <!-- Maturity with Proper Judgement icon -->
-                    <h2>Maturity with Proper Judgement</h2>
-                    <p>Encouraging sound decision-making based on Christian values and principles.</p>
+                    <div class="icon">👑</div> <!-- Strong Leadership icon -->
+                    <h2>Strong Leadership</h2>
+                    <p>Fostering effective guidance and direction through servant leadership that inspires and empowers our community.</p>
                 </div>
                 <div class="card">
                     <div class="icon">🔍</div> <!-- Accountability icon -->
-                    <h2>Accountability</h2>
-                    <p>Being transparent and accountable for our actions in all areas of parish life.</p>
+                    <h2>Accountability and Transparency</h2>
+                    <p>Maintaining open communication and responsible stewardship in all parish operations and decision-making processes.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">⭐</div> <!-- Excellence icon -->
+                    <h2>Excellence</h2>
+                    <p>Striving for the highest standards in all our ministries and services to glorify God and serve our community.</p>
                 </div>
             </div>
         </div>
@@ -129,28 +125,48 @@
     <section class="goals-section">
         <div class="container">
             <div class="section-header">
-                <h1>Goals</h1>
+                <h1>Objectives</h1>
             </div>
             <div class="goals-list">
                 <div class="goal-item">
-                    <h2>Spiritual Growth</h2>
-                    <p>To enhance spiritual growth through regular worship and community engagement.</p>
+                    <h2>Sanctification of the Souls</h2>
+                    <p>To guide and nurture spiritual growth through sacraments, prayer, and pastoral care for the eternal salvation of all souls.</p>
                 </div>
                 <div class="goal-item">
-                    <h2>Education</h2>
-                    <p>To provide educational programs that deepen understanding of the faith.</p>
+                    <h2>Excellence Performance</h2>
+                    <p>To maintain the highest standards in liturgical celebrations, pastoral services, and administrative functions.</p>
                 </div>
                 <div class="goal-item">
-                    <h2>Outreach</h2>
-                    <p>To expand outreach initiatives and support local and global missions.</p>
+                    <h2>Strong Team Collaboration</h2>
+                    <p>To foster unity and effective cooperation among clergy, staff, and parishioners in serving the church's mission.</p>
                 </div>
                 <div class="goal-item">
-                    <h2>Volunteerism</h2>
-                    <p>To promote a culture of volunteerism within the parish community.</p>
+                    <h2>Set and Accomplish Strategic Goals</h2>
+                    <p>To develop and implement clear, achievable objectives that advance our parish's vision and mission.</p>
                 </div>
                 <div class="goal-item">
-                    <h2>Administration</h2>
-                    <p>To strengthen parish administration and resources for better service delivery.</p>
+                    <h2>Deliver Exceptional Community Satisfaction</h2>
+                    <p>To ensure our parish services and programs meet and exceed the spiritual and social needs of our community.</p>
+                </div>
+                <div class="goal-item">
+                    <h2>Build a Positive and Inclusive Culture</h2>
+                    <p>To create a welcoming environment where all members feel valued, respected, and encouraged to participate.</p>
+                </div>
+                <div class="goal-item">
+                    <h2>Optimize Efficiency and Resource Management</h2>
+                    <p>To responsibly steward our parish resources, ensuring effective utilization for maximum impact.</p>
+                </div>
+                <div class="goal-item">
+                    <h2>Develop Strong Leadership and Accountability</h2>
+                    <p>To cultivate capable leaders and maintain transparent governance at all levels of parish administration.</p>
+                </div>
+                <div class="goal-item">
+                    <h2>Measure and Analyze Performance</h2>
+                    <p>To regularly evaluate and improve our programs, services, and initiatives through data-driven assessment.</p>
+                </div>
+                <div class="goal-item">
+                    <h2>Accountability to Stakeholders</h2>
+                    <p>To maintain transparent communication and responsible stewardship with all parish stakeholders.</p>
                 </div>
             </div>
         </div>
@@ -202,5 +218,10 @@
         </div>
     </footer>
 </div>
+<!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
