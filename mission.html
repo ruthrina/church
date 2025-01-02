@@ -39,19 +39,25 @@
     </header>
 
     <nav>
-        <ul>
+        <!-- Hamburger icon for mobile view -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span>&#9776;</span> <!-- This is the hamburger icon -->
+        </div>
+    
+        <ul id="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <li class="dropdown"><a href="history.html">About Us <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="history.html">About Us <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="history.html">History</a></li>
-
-                    <li><a href="sub_parish.html">sub parishes</a></li>
+                    <li><a href="sub_parish.html">Sub Parishes</a></li>
                     <li><a href="parish_leaders.html">Leadership</a></li>
-                    <li><a href="corevalues_goals.html">core values & goals</a></li>
+                    <li><a href="corevalues_goals.html">Core Values & Goals</a></li>
                     <li><a href="mission.html">Mission & Vision</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="mass_time.html">Schedules <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="mass_time.html">Schedules <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="mass_time.html">Mass Time</a></li>
                     <li><a href="confession.html">Confession</a></li>
@@ -59,35 +65,35 @@
                     <li><a href="Liturgical.html">Liturgical</a></li>
                 </ul>
             </li>
-            <li class="dropdown"><a href="chior.html">Liturgy <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="chior.html">Liturgy <span>&#9660;</span></a>
                 <ul class="dropdown-content">
-
                     <li><a href="chior.html">Choirs</a></li>
                     <li><a href="alter_server.html">Altar Servers</a></li>
-                    <li><a href="lector.html">Lector</a></li>
+                    <li><a href="lector.html">Lectors</a></li>
                     <li><a href="ushers.html">Ushers</a></li>
-
                 </ul>
             </li>
-            <li class="dropdown"><a href="baptism.html">Sacraments <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="baptism.html">Sacraments <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="baptism.html">Baptism</a></li>
                     <li><a href="eucharist.html">Eucharist</a></li>
                     <li><a href="confession.html">Confirmation</a></li>
                 </ul>
             </li>
-
-            <li class="dropdown"><a href="Presbytery.html">Projects <span>&#9660;</span></a>
+            <li class="dropdown">
+                <a href="Presbytery.html">Projects <span>&#9660;</span></a>
                 <ul class="dropdown-content">
                     <li><a href="Presbytery.html">Presbytery</a></li>
-                    
                 </ul>
             </li>
-            <li><a href="patners.html">Our Patners</a></li>
+            <li><a href="patners.html">Our Partners</a></li>
             <li><a href="media.html">Media</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    
 
     <section class="mission-vision-section">
         <div class="container">
@@ -98,12 +104,12 @@
             <div class="content-block">
                 <div class="content-item mission">
                     <h2>Mission</h2>
-                    <p>To be united in the Eucharist and formed as instruments of peace through diverse talents and perspectives to achieve outstanding results through strategic collaboration and unwavering commitment. We are dedicated to fostering a culture of excellence by setting clear goals, embracing continuous improvement, and supporting each other’s growth. By leveraging our collective strengths and driving towards shared success.</p>
+                    <p>To foster evangelization through uniting diverse talents and perspectives to achieve outstanding results through strategic collaboration, high-performance and unwavering commitment.</p>
                 </div>
 
                 <div class="content-item vision">
                     <h2>Vision</h2>
-                    <p>To become a strong and model parish while fostering spiritual morals, social, economic and financial prosperity, proclaiming the Gospel and inclusion within the parish family.</p>
+                    <p>To become a formidable model Parish fostering Personal and Community growth and Development, Spiritually, Morally and Economically.</p>
                 </div>
             </div>
         </div>
@@ -154,6 +160,11 @@
             <a href="/privacy-policy">Privacy Policy</a>
         </div>
     </footer>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </section>
 </html>
